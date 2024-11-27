@@ -12,7 +12,16 @@
 			"architect": {
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
-					"options": {},
+					"options": {
+						"moduleFederation": {
+							"name": "taskapp",
+							"exposes": {
+								"./TaskListComponent": "src/app/task-list/task-list.component.ts"
+							},
+							"remotes": [],
+							"shared": []
+						}
+					},
 					"configurations": {
 						"production": {
 							"target": "taskapp-remote:esbuild:production"
