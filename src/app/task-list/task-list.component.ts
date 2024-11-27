@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
   selector: 'app-task-list',
   imports: [CommonModule],
   templateUrl: './task-list.component.html',
-  styleUrl: './task-list.component.css'
+  styleUrl: './task-list.component.css',
+  standalone: true
 })
 export class TaskListComponent {
 
